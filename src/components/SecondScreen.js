@@ -7,7 +7,7 @@ const SecondScreen = (props) => {
   return (
     <View style={styles.container}>
       <Text>{greetingObject.title}</Text>
-      <Text>{greetingObject.content}</Text>
+      <Text>{greetingObject.body}</Text>
       <Text>{props.route.params.customParameter}</Text>
     </View>
   );
