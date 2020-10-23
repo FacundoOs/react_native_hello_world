@@ -5,6 +5,7 @@ import MainScreen from "./src/components/MainScreen";
 import SecondScreen from "./src/components/SecondScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import Login from './src/components/Login'
 // import { useSelector } from "react-redux";
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ const App = () => {
     // </View>
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="The First Page" component={MainScreen} />
         <Stack.Screen name="Another Page" component={SecondScreen} />
       </Stack.Navigator>
